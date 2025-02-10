@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yape.Transactions.Api", "Yape.Transactions.Api\Yape.Transactions.Api.csproj", "{48B6922A-3C29-4852-90D7-7B8C2905DFD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yape.Transactions.Application", "Yape.Transactions.Application\Yape.Transactions.Application.csproj", "{59E44BAC-1ABC-49F1-BC9C-63721644EAB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yape.Transactions.Domain", "Yape.Transactions.Domain\Yape.Transactions.Domain.csproj", "{07B48A1A-A502-4B3E-BFF0-A5CFFEBCAAB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yape.Transactions.Infrastructure", "Yape.Transactions.Infrastructure\Yape.Transactions.Infrastructure.csproj", "{9E33F166-9332-4ED5-9951-65276FCFC2A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yape.Transactions.Utils", "Yape.Transactions.Utils\Yape.Transactions.Utils.csproj", "{307CDB4C-BEDB-4AFE-B587-1F55347CD1ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48B6922A-3C29-4852-90D7-7B8C2905DFD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48B6922A-3C29-4852-90D7-7B8C2905DFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48B6922A-3C29-4852-90D7-7B8C2905DFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48B6922A-3C29-4852-90D7-7B8C2905DFD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59E44BAC-1ABC-49F1-BC9C-63721644EAB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E44BAC-1ABC-49F1-BC9C-63721644EAB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E44BAC-1ABC-49F1-BC9C-63721644EAB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E44BAC-1ABC-49F1-BC9C-63721644EAB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07B48A1A-A502-4B3E-BFF0-A5CFFEBCAAB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B48A1A-A502-4B3E-BFF0-A5CFFEBCAAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B48A1A-A502-4B3E-BFF0-A5CFFEBCAAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B48A1A-A502-4B3E-BFF0-A5CFFEBCAAB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E33F166-9332-4ED5-9951-65276FCFC2A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E33F166-9332-4ED5-9951-65276FCFC2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E33F166-9332-4ED5-9951-65276FCFC2A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E33F166-9332-4ED5-9951-65276FCFC2A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{307CDB4C-BEDB-4AFE-B587-1F55347CD1ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{307CDB4C-BEDB-4AFE-B587-1F55347CD1ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{307CDB4C-BEDB-4AFE-B587-1F55347CD1ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{307CDB4C-BEDB-4AFE-B587-1F55347CD1ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
