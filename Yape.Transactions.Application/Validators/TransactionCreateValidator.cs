@@ -13,8 +13,12 @@ namespace Yape.Transactions.Application.Validators
             RuleFor(x => x.TargetAccountId)
                 .NotEmpty().WithMessage("El campo 'TargetAccountId' es obligatorio.");
 
-            RuleFor(x => x.TransferTypeId)
-                .GreaterThan(0).WithMessage("El 'TransferTypeId' debe ser mayor que 0.");
+
+
+            RuleFor(u => u.TransferTypeId)
+                 .Must(code => (code == 1 || code == 2))
+            .GreaterThan(0).WithMessage("El código de TransferTypeId ingresado no está habilitado.");
+            
 
             RuleFor(x => x.Value)
                 .GreaterThan(0).WithMessage("El 'Value' debe ser mayor que 0.");

@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Yape.Transactions.Domain\Yape.Transactions.Domain.csproj" />
+    <ProjectReference Include="..\Yape.Transactions.Utils\Yape.Transactions.Utils.csproj" />
   </ItemGroup>
 
 </Project>

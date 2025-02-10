@@ -21,6 +21,7 @@ namespace Yape.Transactions.Infrastructure
             services.AddKafkaProducer(configuration);
             services.AddHostedService<KafkaConsumer>();
             services.AddScoped<ITransactionRepository, TransactionRepository>();
+            services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IContextDatabase, ContextDatabase>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             return services;
