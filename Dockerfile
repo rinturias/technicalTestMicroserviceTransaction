@@ -10,14 +10,14 @@ RUN dotnet restore
 
 WORKDIR "/src/Yape.Transactions.Api"
 
-RUN dotnet build "Yape.Transactions.csproj" -c Release -o /app/build
+RUN dotnet build "Yape.Transactions.Api.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Yape.Transactions.csproj" -c Release -o /app/publish
+RUN dotnet publish "Yape.Transactions.Api.csproj" -c Release -o /app/publish
 
 FROM base AS final
-
-EXPOSE 8080
+ENV ASPNETCORE_URLS=http://0.0.0.0:8084
+EXPOSE 8084
 
 
 RUN apt-get update && \
@@ -45,4 +45,4 @@ ENV DOTNET_HOSTBUILDER__RELOADCONFIGONCHANGE=false
 WORKDIR /app
 COPY --from=publish /app/publish .
 
-ENTRYPOINT ["dotnet", "Yape.Transactions.dll"]
+ENTRYPOINT ["dotnet", "Yape.Transactions.Api.dll"]
